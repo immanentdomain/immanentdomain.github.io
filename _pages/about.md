@@ -5,6 +5,4 @@ header:
   image: "/images/zakim.jpg"
 ---
 
-I'm a senior data scientist who excels at data wrangling, machine learning, exploratory analysis, and data visualizations.
-
-Etc, etc, etc
+I am a demand planner and business intelligence analyst who uses python to gather, explore, and analyze data in order to drive strategic planning processes. I excel at bridging the gap between data and decision making.
