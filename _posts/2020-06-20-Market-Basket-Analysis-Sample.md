@@ -4,7 +4,7 @@ date: 2020-06-20
 tags: [data science, association analysis, market basket analysis]
 header:
   image:
-excerpt: "data science, association analysis, market basket analysis"
+excerpt: "Exploring a sample dataset to identify sets of items that customers purchase together"
 mathjax: "true"
 ---
 # Problem:
@@ -433,7 +433,7 @@ rules.to_excel('MarketBasketAnalysisSample.xlsx')
 
 ### How to interpret this dataset:
 
-When customers buy "antecedent", they are "confidence" likely to also purchase "consequent". The support of these items show how oten each item appears in the dataset.
+When customers buy "antecedent", they are "confidence" likely to also purchase "consequent". The support of these items show how often each item appears in the dataset.
 
 # Conclusions:
 
