@@ -25,10 +25,10 @@ Use association analysis on a sample sales dataset to find relationships between
 ### Glossary
 
 ###### Support:
-Support is an indication of how frequently the itemset appears in the dataset.  In many instances, you may want to look for high support in order to make sure it is a useful relationship. However, there may be instances where a low support is useful if you are trying to find “hidden” relationships
+Support is an indication of how frequently the itemset appears in the dataset.  Oftentimes, you want to look for high support in order to minimize sample size bias. However, low support is still useful as it can help identify interesting relationships.
 
 ###### Confidence:
-Confidence is an indication of how often the rule has been found to be true. A confidence of 0.5 would mean that in 50% of the cases where the antecedent was purchased, the purchase also included the consequent
+Confidence is an indication of how often the rule has been found to be true. A confidence of 0.2 would mean that in 20% of the cases where the antecedent was purchased, the purchase also included the consequent.
 
 ###### Lift:
 Lift is the ratio of the observed support to that expected if the two rules were independent.
@@ -244,28 +244,28 @@ consumerBasket  = (df[df['Segment'] == 'Consumer']
 
 
 ```python
-''' define a function that turns any value >0 to 1, this one-hot encodes the items to show whether they did/did not appear 
+''' define a function that turns any value >0 to 1, this converts the items to a boolean in order to show whether they did/did not appear 
 on a given sales order'''
 
-def encode_units(x):
+def bool_qty(x):
     if x <= 0:
         return 0
     if x >= 1:
         return 1
 
-consumerBasket_sets = consumerBasket.applymap(encode_units)
+consumerBasket_sets = consumerBasket.applymap(bool_qty)
 ```
 
 # Analysis
 
 
 ```python
-frequent_itemsets = apriori(consumerBasket_sets, min_support=0.0005, use_colnames=True)
+frequentItems = apriori(consumerBasket_sets, min_support=0.0005, use_colnames=True)
 ```
 
 
 ```python
-rules = association_rules(frequent_itemsets, metric='lift', min_threshold=1)
+rules = association_rules(frequentItems, metric='lift', min_threshold=1)
 
 # filter for item combinations that have a lift greater than 6 and a confidence level higher than 50%
 rules = rules[(rules['lift'] >= 6) & (rules['confidence'] >= 0.4)]
