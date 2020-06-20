@@ -3,7 +3,7 @@ title: "Example Market Basket Analysis"
 date: 2020-06-20
 tags: [data science, association analysis, market basket analysis]
 header:
-	image:
+  image:
 excerpt: "data science, association analysis, market basket analysis"
 mathjax: "true"
 ---
