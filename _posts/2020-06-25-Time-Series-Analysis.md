@@ -207,14 +207,6 @@ print(fig)
 print(model.plot_components(forecast))
 ```
 
-    INFO:fbprophet:Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
-    INFO:fbprophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
-    
-
-    Figure(720x432)
-    Figure(648x432)
-    
-
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/output_6_2.png">
 
@@ -242,14 +234,9 @@ fig2 = plot_cross_validation_metric(df_cv, metric='mape')
 print(fig2)
 ```
 
-    INFO:fbprophet:Making 12 forecasts with cutoffs between 2016-01-11 00:00:00 and 2017-11-01 00:00:00
-    INFO:fbprophet:n_changepoints greater than number of observations.Using 10.0.
-    INFO:fbprophet:n_changepoints greater than number of observations.Using 11.0.
-    INFO:fbprophet:n_changepoints greater than number of observations.Using 13.0.
     
 
     The MAPE of our model is: 15.79%
-    Figure(720x432)
     
 
 
