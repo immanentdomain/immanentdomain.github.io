@@ -445,7 +445,3 @@ For example, future bundle promotions may include both Wilson Jones Active Use B
 
 Someone with expertise in the industry would probably have a lot of questions when looking at this dataset and they will easily be able to slice the data in different ways (e.g. look at purchasing patterns for specific cities, regions, categories) in order to draw more insights. 
 
-
-```python
-
-```
