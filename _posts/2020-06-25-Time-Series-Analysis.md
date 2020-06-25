@@ -216,11 +216,11 @@ print(model.plot_components(forecast))
     
 
 
-![png](output_6_2.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/output_6_2.png">
 
 
 
-![png](output_6_3.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/output_6_3.png">
 
 
 As one might expect based on media coverage and pop culture references, demand for avocados has grown quite a lot from 2015 to 2018. This model and graphic allows us to visualize that quite clearly. It also gives us the opportunity to clearly visualize some basic seasonality that we are seeing in the data. Looking at the above graphs, we can see that demand for organic Hass avocados usually peaks in the first half of the year. This can help inform our supply plan as it allows us to plan capacity and resources accordingly. 
@@ -253,7 +253,7 @@ print(fig2)
     
 
 
-![png](output_8_2.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/output_8_2.png">
 
 
 After tweaking the parameters of our model, we are able to achieve a mean absolute percentage error of 15.79%. This means that on average our forecasts have an absolute error value of about 15% or in other words our forecast is about 84% accurate. While not perfect, if we continue to tweak the parameters we may risk overfitting the model which may make our future predictions worse.  
@@ -269,7 +269,7 @@ plt.show()
 ```
 
 
-![png](output_10_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/output_10_0.png">
 
 
 This plot shows that neither the actual sales nor our predictions are terribly skewed in one direction or the other. This is good news and shows that our model is not consistently predicting sales as too high or too low. 
