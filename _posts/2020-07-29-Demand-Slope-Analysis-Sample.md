@@ -4,7 +4,7 @@ date: 2020-07-29
 tags: [data science, price elasticity of demand, forecasting]
 header:
   image:
-excerpt: "Using an online sales dataset to determine the relationship between price and demand"
+excerpt: "Using an online sales dataset to determine the relationship between price and demand for shoes"
 mathjax: "true"
 ---
 
@@ -189,15 +189,15 @@ print(fig3)
     
 
 
-![png](output_7_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/output_7_1.png">
 
 
 
-![png](output_7_2.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/output_7_2.png">
 
 
 
-![png](output_7_3.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/output_7_3.png">
 
 
 These are some interesting results. Quite quickly we can see that there is a pretty high R-Squared value (0.778) indicating that price and units ordered are highly correlated. Additionally, looking at the p value and f statistic supports our belief that price does have an impact on the amount of units ordered. Looking at the charts above we can also see that the errors in the model appear to be homoscedastic which is good news because it means that there aren't patterns in our errors.
@@ -219,7 +219,7 @@ sns.pairplot(df, kind='reg', x_vars=['Price'], y_vars=['Quantity'], height=6, as
 
 
 
-![png](output_9_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/output_9_1.png">
 
 
 This helps us visualize how our model would perform in real world data and we can see that generally our model is pretty close to the observed values. 
@@ -255,11 +255,11 @@ print(m.plot_components(forecast))
     
 
 
-![png](output_12_2.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/output_12_2.png">
 
 
 
-![png](output_12_3.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/output_12_3.png">
 
 
 Looking at this graph we can pretty clearly see that our mean and variances are remaining pretty constant (the projected line is basically flat) so the dataset is most likely stationary but in the interest of double checking, let's run an Augmented Dickey-Fuller Test.
