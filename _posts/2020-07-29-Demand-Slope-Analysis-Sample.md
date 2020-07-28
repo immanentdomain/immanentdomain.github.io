@@ -181,11 +181,6 @@ print(fig3)
     Kurtosis:                       5.449   Cond. No.                         997.
     ==============================================================================
     
-    Warnings:
-    [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-    Figure(864x576)
-    Figure(864x576)
-    Figure(864x576)
     
 
 
@@ -210,12 +205,6 @@ To emphasize this point, let's take a look below at the regression (line) plotte
 ```python
 sns.pairplot(df, kind='reg', x_vars=['Price'], y_vars=['Quantity'], height=6, aspect=2)
 ```
-
-
-
-
-    <seaborn.axisgrid.PairGrid at 0x285073d1780>
-
 
 
 
@@ -245,13 +234,6 @@ fig = m.plot(forecast)
 print(fig)
 print(m.plot_components(forecast))
 ```
-
-    INFO:fbprophet:Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
-    INFO:fbprophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
-    
-
-    Figure(720x432)
-    Figure(648x432)
     
 
 
@@ -294,7 +276,7 @@ the data is stationary. Since that criteria is met here we can feel confident th
 
 **How can we translate this data into action for our company?**
 
-This data can help inform how elastic our demand is and a big benefit is that we are now able to use the line formula to estimate how many shoes we would sell at a given price. Let's build an example tool below where we explore what a price increase to \\$95 would mean for our demand.
+This data can help inform how elastic our demand is and a big benefit is that we are now able to use the line formula to estimate how many shoes we would sell at a given price. Let's build an example tool below where we explore what a price increase to \$95 would mean for our demand.
 
 
 ```python
@@ -316,4 +298,4 @@ Based on the above analysis, it appears that demand for the Orange Running Shoes
 ### Limitations:
 "all models are wrong, some are useful" 
 
-This model was trained on a relatively narrow range of data (prices fell between ~ \\$85-$115) so applying it to predict more extreme discounts may not bear fruit. Additionally, in the world of big data, 53 data points is not a large sample size. So, while I would be excited to see such positive results, my expectations should be tempered a little until we can run some experiments on our online site.
+This model was trained on a relatively narrow range of data (prices fell between ~ \$85-$115) so applying it to predict more extreme discounts may not bear fruit. Additionally, in the world of big data, 53 data points is not a large sample size. So, while I would be excited to see such positive results, my expectations should be tempered a little until we can run some experiments on our online site.
