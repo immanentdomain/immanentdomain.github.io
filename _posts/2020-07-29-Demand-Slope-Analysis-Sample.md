@@ -4,7 +4,7 @@ date: 2020-07-29
 tags: [data science, price elasticity of demand, forecasting]
 header:
   image:
-excerpt: "Using an online sales dataset to determine the relationship between price and demand for shoes"
+excerpt: "Using least squares regression on an online sales dataset to determine the relationship between price and demand for shoes"
 mathjax: "true"
 ---
 
