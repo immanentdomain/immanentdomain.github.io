@@ -4,7 +4,7 @@ permalink: /data-wrangling/
 title: "Projects"
 author_profile: true
 header:
-  image: "/images/SunsetBeachBanner.jpg"
+  image: "/images/waterfront.jpg"
 ---
 
 
